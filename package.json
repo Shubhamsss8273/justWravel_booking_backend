@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "prestart": "npx prisma generate && npm run build",
     "build": "tsc -p .",
     "start": "node dist/index.js",
     "dev": "nodemon --watch src --exec ts-node src/index.ts"
