@@ -28,6 +28,7 @@ export const createBooking = async (req: Request, res: Response) => {
         ...(payload.last_name && { last_name: payload.last_name }),
         booking_start: payload.booking_start,
         booking_end: payload.booking_end,
+        guest_count: payload.guest_count,
       },
     });
     return res

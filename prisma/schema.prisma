@@ -19,6 +19,7 @@ model Bookings {
   email         String
   first_name    String
   last_name     String?
+  guest_count   Int
   booking_start DateTime
   booking_end   DateTime
   created_at    DateTime @default(now())

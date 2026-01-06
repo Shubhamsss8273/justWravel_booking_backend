@@ -38,5 +38,12 @@ export const checkCreateBooking = (
       message: "Booking end date can not be empty",
     });
   }
+  if (!payload.guest_count || payload.guest_count < 0) {
+    return res.status(400).json({
+      status: false,
+      response_code: 400,
+      message: "Booking end date can not be empty",
+    });
+  }
   next();
 };

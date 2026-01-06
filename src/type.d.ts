@@ -4,4 +4,5 @@ export interface BookingPayload {
   last_name?: string;
   booking_start: Date;
   booking_end: Date;
+  guest_count: number;
 }
